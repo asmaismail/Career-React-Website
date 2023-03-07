@@ -7,11 +7,12 @@ import Footer from '../Footer/index'
 import Navbar from '../Navbar/index'
 import Advisors from '../Advisor/Advisors'
 import CounterUp from '../CounterUp/CounterUp'
+import Breadcrumb  from '../Breadcrumb/Breadcrumb'
 const About = () => {
   return (
     <>
     <Navbar/>
-
+      <Breadcrumb pageName="About us"/>
     <div class="flex flex-col lg:flex-row mx-20 gap-x-20 mt-7">
   <div class="lg:w-1/2">
     <img class="w-full h-[80%]" src={pic} alt="Image"/>

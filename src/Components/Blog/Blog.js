@@ -16,7 +16,7 @@ import image9 from '../../Assets/course-9.jpg'
 const data = [
   {
     image: image1,
-    title: "Business Studies",
+    title: "Some says education is the process of gaining information for nation",
     button: "Business",
     description: "Description 1",
     icon1: "icon1",
@@ -25,7 +25,7 @@ const data = [
   {
     image: image2,
     button: "Science",
-    title: "Computer Engineering",
+    title: "Education gives us knowledge world around us changs",
     description: "Description 2",
     icon1: "icon1",
     icon2: "icon2",
@@ -89,18 +89,19 @@ const data = [
 ];
 
 
-const Courses = () => {
+const Blog = () => {
   return (
     <>
     <Navbar/>
-    <Breadcrumb pageName="Our Course"/>
+    <Breadcrumb pageName="Our Blog"/>
     <div className="mx-20 flex flex-wrap mt-14">
       {data.map((item, index) => (
         <div key={index} className="w-full md:w-1/3 p-4">
           <div className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col">
             <img src={item.image} alt="item" className="w-full h-72 object-cover" />
             <div className="px-4 py-2">
-            <button className='bg-blue text-white hover:bg-yellow hover:text-black px-8 py-2 rounded-md mt-4'>{item.button}</button>
+            <button className='mt-4'>AUGUEST 25, 2018
+</button>
               <h2 className="font-bold mb-2 text-[30px] mt-5 text-blue hover:text-yellow">{item.title}</h2>
               <p className="text-gray-700 text-base mt-5">Maecenas fermentum consequat mi fonec has fermentum ellentesque malesuada.</p>
             </div>
@@ -130,4 +131,4 @@ const Courses = () => {
   )
 }
 
-export default Courses
+export default Blog;

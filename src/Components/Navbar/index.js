@@ -41,10 +41,10 @@ const index = () => {
 
 
     </div>
-    <div className='flex flex-row w-full h-[70px] sticky top-0 shadow-lg bg-white z-50'>
-    <div className=' w-[40%] flex mx-20'>
+    <div className='flex flex-row w-full h-[70px] p-12 sticky top-0 shadow-lg bg-white z-50'>
+    <div className=' w-[40%] flex mx-20 items-center'>
       <h1 className='text-yellow font-bold  text-[50px]'> <BsBook className='mt-3' /> </h1>
-    <h1 className='text-blue font-bold text-[30px] mt-3 mx-1'>Sikkha</h1>
+    <h1 className='text-blue font-bold text-[30px] mx-1'>Sikkha</h1>
     </div>
     <div className='w-[50%] flex justify-start items-center cursor-pointer'>
       <ul className='flex flex-row text-blue text-[20px]'>
@@ -68,4 +68,4 @@ const index = () => {
   )
 }
 
-export default index
+export default index;
