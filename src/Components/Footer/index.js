@@ -19,7 +19,7 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 const index = () => {
     return (
         <>
-            <div className='w-3/4 bg-yellow mx-auto flex lg:flex-row md:flex-row flex-col gap-60 py-5 -mb-[80px] z-10 relative'>
+            {/* <div className='w-3/4 bg-yellow mx-auto flex lg:flex-row md:flex-row flex-col gap-60 py-5 -mb-[80px] z-10 relative'>
                 <div className='justify-center'>
                     <h2 className='text-blue flex font-bold ml-10 mt-2 text-[30px]'>Subscribe</h2><br />
                     <h2 className='text-blue flex ml-10 text-[20px]'>Enter your email and get latest updates and offers subscribe us</h2>
@@ -34,14 +34,15 @@ const index = () => {
                         <FaLongArrowAltRight/>
                     </div>
                 </div>
-            </div>
-            <div className='flex lg:flex-row md:flex-col flex-col w-full bg-blue bottom-0 hover:cursor-pointer z-30 mt-5'>
+            </div> */}
+             <div className='w-full bg-blue'>
+             <div className='container mx-10 m-auto flex flex-wrap hover:cursor-pointer z-30 mt-5'>
                 <ScrollToTop />
 
-                <div className='w-[25%] mb-14 mt-10'>
-                    <div className='flex flex-row justify-center'>
-                        <h2 className='text-yellow font-bold  text-[50px] mt-12'><BsBook /></h2>
-                        <h2 className='text-white font-bold text-[30px] mt-12 mx-3'>Sikkha</h2>
+                <div className='w-full lg:w-1/4 md:w-1/3 mb-14 mt-10'>
+                    <div className='flex flex-row'>
+                        <h2 className='text-yellow font-bold  text-[50px] mt-12 mx-5'><BsBook /></h2>
+                        <h2 className='text-white font-bold text-[30px] mt-12'>Sikkha</h2>
                     </div>
                     <div className='mx-5 mt-2 text-gray-300'>
                         <h1>Sorem ipsum dolor sit amet conse ctetur adipiscing elit, sed do eiusmod
@@ -57,8 +58,8 @@ const index = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='w-[25%] mt-10'>
-                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex justify-center'>Quick Links</h1>
+                <div className='w-full lg:w-1/4 md:w-1/3 mb-14  mt-10'>
+                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex ml-12'>Quick Links</h1>
 
                     <div className='flex mt-4 text-gray-300 justify-center'>
                         <ul>
@@ -79,8 +80,8 @@ const index = () => {
                         </ul>
                     </div>
                 </div>
-                <div className=' w-[25%] mt-10'>
-                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex justify-center'>Recent Post</h1>
+                <div className=' w-full lg:w-1/4 md:w-1/3 mb-14 mt-10'>
+                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex mx-5'>Recent Post</h1>
                     <div className='flex flex-row justify-center mt-4'>
                         <div>
                             <img src={pic} alt='image' className='h-[50px] mx-3' />
@@ -107,8 +108,8 @@ const index = () => {
                     </div>
 
                 </div>
-                <div className='w-[25%] mb-10 mt-10'>
-                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex justify-center'>Contact us</h1>
+                <div className='w-full lg:w-1/4 md:w-1/3 mb-14 mt-10'>
+                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex'>Contact us</h1>
                     <div className='flex mt-4'>
                         <ul>
                             <li className='text-gray-300 text-[20px]  hover:text-yellow'><TfiHeadphoneAlt /></li>
@@ -128,7 +129,8 @@ const index = () => {
             <div className='bg-blue h-16'>
                 <h1 className='border-b-2 w-full'></h1>
                 <h1 className='text-gray-300 text-center mt-5'>Copyright © 2018. All rights are reserved</h1>
-            </div>
+            </div> 
+</div> 
 
         </>
 

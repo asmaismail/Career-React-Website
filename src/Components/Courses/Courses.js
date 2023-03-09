@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Navbar/index'
+import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/index'
 import Brand from '../Brand/Brand'
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
@@ -109,10 +109,7 @@ const Courses = () => {
                 Button
               </button>
               <div className="flex flex-row w-full justify-start">
-                {/* <div className="flex bg-red-300 ml-0"><AiOutlineUser className='text-blue hover:text-yellow font-bold text-[30px]'/>35 */}
-                
-                {/* <AiOutlineHeart className='text-blue hover:text-yellow ml-2 font-bold text-[30px]'/>35</div> */}
-                <div className=''><h2 className='font-bold text-blue ml-14 hover:text-yellow text-[20px]'>View details</h2></div>
+                                <div className=''><h2 className='font-bold text-blue ml-14 hover:text-yellow text-[20px]'>View details</h2></div>
               </div>
             </div>
           </div>

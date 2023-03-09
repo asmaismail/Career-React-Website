@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../Navbar/index'
+import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/index'
 import Brand from '../Brand/Brand'
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
@@ -25,7 +25,7 @@ const data = [
   {
     image: image2,
     button: "Science",
-    title: "Education gives us knowledge world around us changs",
+    title: "Education gives us knowledge world around us changes",
     description: "Description 2",
     icon1: "icon1",
     icon2: "icon2",
@@ -33,7 +33,7 @@ const data = [
   {
     image: image3,
     button: "Education",
-    title: "English for tomorrow",
+    title: "Some says education is the process of gaining information for nation",
     description: "Description 3",
     icon1: "icon1",
     icon2: "icon2",
@@ -125,8 +125,8 @@ const Blog = () => {
 
     
 
-    <Brand/>  
-     <Footer/>
+    {/* <Brand/>   */}
+     {/* <Footer/> */}
     </>
   )
 }

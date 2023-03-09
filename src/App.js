@@ -4,8 +4,9 @@ import React from 'react';
 import './App.css';
 import FaqPage from "./Pages/FaqPage";  
 import HomePage from "./Pages/HomePage";  
-import EventPage from "./Pages/EventPage";  
+import ShopPage from "./Pages/ShopPage";  
 import BlogPage from "./Pages/BlogPage";  
+import EventPage from "./Pages/EventPage";  
 import AboutPage from "./Pages/AboutPage"; 
 import CoursesPage from "./Pages/CoursesPage"; 
 import ContactPage from "./Pages/ContactPage";   
@@ -21,6 +22,7 @@ function App() {
     <Route path="/courses" element={<CoursesPage />} />
     <Route path="/blog" element={<BlogPage />} />
     <Route path="/event" element={<EventPage />} />
+    <Route path="/shop" element={<ShopPage />} />
     <Route path="/" element={<HomePage />} />
 
 

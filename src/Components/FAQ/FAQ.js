@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
-import Navbar from '../Navbar/index'
+import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/index'
 import Brand from '../Brand/Brand'
 import { FiPlus, FiMinus } from 'react-icons/fi';
@@ -12,7 +12,6 @@ const FAQ = () => {
     setIsOpen((prevState) => {
       const newState = [...prevState];
       newState[index] = !newState[index];
-      // close all other accordions
       for (let i = 0; i < newState.length; i++) {
         if (i !== index) {
           newState[i] = false;
@@ -149,3 +148,6 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blandi sentium vo
 };
 
 export default FAQ;
+
+
+
