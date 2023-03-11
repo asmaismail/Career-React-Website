@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
-import image1 from '../Assets/slider.jpg';
-import image2 from '../Assets/slider2.jpg';
-import image3 from '../Assets/slider.jpg';
+import image1 from '../Assets/slider-1.jpg';
+import image2 from '../Assets/slider-2.jpg';
+import image3 from '../Assets/slider-3.jpg';
 
 const images = [
     { src: image1, text: 'First image' },

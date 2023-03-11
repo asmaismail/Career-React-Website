@@ -92,6 +92,7 @@ const data = [
 const Courses = () => {
   return (
     <>
+    <div className='overflow-x-hidden'>
     <Navbar/>
     <Breadcrumb pageName="Our Course"/>
     <div className="mx-20 flex flex-wrap mt-14">
@@ -119,10 +120,10 @@ const Courses = () => {
       ))}
     </div>
 
-    
+    </div>
 
-    <Brand/>  
-     <Footer/>
+    {/* <Brand/>   */}
+     {/* <Footer/> */}
     </>
   )
 }

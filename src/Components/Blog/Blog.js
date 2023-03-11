@@ -92,6 +92,7 @@ const data = [
 const Blog = () => {
   return (
     <>
+    <div className='overflow-x-hidden'>
     <Navbar/>
     <Breadcrumb pageName="Our Blog"/>
     <div className="mx-20 flex flex-wrap mt-14">
@@ -122,11 +123,12 @@ const Blog = () => {
         
       ))}
     </div>
+    <Footer/>
+    </div>
 
     
 
     {/* <Brand/>   */}
-     {/* <Footer/> */}
     </>
   )
 }

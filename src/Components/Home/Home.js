@@ -57,7 +57,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <Array/>
+            {/* <Array/> */}
           </div>
         </div>
        

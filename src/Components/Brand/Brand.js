@@ -10,8 +10,8 @@ import img5 from '../../Assets/brand6.png'
 const Brand = () => {
   return (
     <>
-    <div className='w-50% flex justify-center h-[200px]'>
-        <ul className='flex flex-row mt-16 mb-16 gap-x-20'>       
+    <div className='lg:w-50%  flex justify-center h-[200px]'>
+        <ul className='flex flex-row  mt-16 mb-16 gap-x-20'>       
        <li> <img src={img} alt="brand pic"  /> </li>
        <li> <img src={img1} alt="brand pic" /> </li>
        <li> <img src={img2} alt="brand pic" /> </li>

@@ -35,7 +35,7 @@ const index = () => {
                     </div>
                 </div>
             </div> */}
-             <div className='w-full bg-blue'>
+             <div className='w-full bg-blue overflow-x-hidden'>
              <div className='container mx-10 m-auto flex flex-wrap hover:cursor-pointer z-30 mt-5'>
                 <ScrollToTop />
 

@@ -10,6 +10,7 @@ import Breadcrumb from '../Breadcrumb/Breadcrumb'
 const Contact = () => {
   return (
     <>
+    <div className='overflow-x-hidden'>
       <Navbar />
       <Breadcrumb pageName="Contact us"/>
       <div>
@@ -52,7 +53,7 @@ const Contact = () => {
               <input type='text' className='border border-solid border-black p-4 lg:w-1/2 md:w-1/2 w-full' autoComplete='off' placeholder='Experience' name='experience' required/>
             </div>
             <div className='mt-5'>
-            <textarea name='message' className='border border-solid border-black lg:px-64 px-32' cols='30' rows='6' placeholder='Your message' autoComplete='off' required></textarea>
+            <textarea name='message' className='border border-solid border-black lg:px-64 px-32' cols='18' rows='6' placeholder='Your message' autoComplete='off' required></textarea>
             </div>
           </div>
           <button className='bg-blue text-white px-6 py-4 hover:bg-yellow hover:text-black mt-5'>Submit now</button>
@@ -66,8 +67,9 @@ const Contact = () => {
       width="100%" height="450" style={{border:0}}  allowfullscreen="" loading="lazy" 
       referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <Brand/>
-      <Footer />
+      {/* <Brand/>
+      <Footer /> */}
+      </div>
     </>
   )
 }
