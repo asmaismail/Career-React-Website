@@ -39,11 +39,11 @@ const images = [
           >
             <img src={image.src} alt={image.text} className="object-cover w-full h-full" />
             <div className="absolute top-[30%] left-[40%] transform -translate-x-1/2 -translate-y-1/2">
-              <h2 className="text-4xl font-bold mt-40 text-white text-left">No nation can prosper in life without education</h2>
-              <h2 className="text-[15px] text-white mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+              <h2 className="text-4xl font-bold mt-80  text-white">No nation can prosper in life without education</h2>
+              <h2 className="text-[15px]  text-white mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
 numqua</h2>
-<button className='rounded-md px-6 py-4 mt-10 font-bold bg-yellow text-white hover:text-black hover:bg-white'>Admit Now</button>
+<button className='rounded-md flex justify-center items-center content-center text-center px-6 py-4 mt-10 font-bold bg-yellow text-white hover:text-black hover:bg-white'>Admit Now</button>
             </div>
           </div>
         ))}

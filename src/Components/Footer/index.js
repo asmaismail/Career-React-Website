@@ -19,7 +19,7 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 const index = () => {
     return (
         <>
-            {/* <div className='w-3/4 bg-yellow mx-auto flex lg:flex-row md:flex-row flex-col gap-60 py-5 -mb-[80px] z-10 relative'>
+            <div className='w-3/4 bg-yellow mx-auto flex lg:flex-row md:flex-row flex-col gap-60 lg:py-5 py-0 -mb-[80px] z-10 relative'>
                 <div className='justify-center'>
                     <h2 className='text-blue flex font-bold ml-10 mt-2 text-[30px]'>Subscribe</h2><br />
                     <h2 className='text-blue flex ml-10 text-[20px]'>Enter your email and get latest updates and offers subscribe us</h2>
@@ -34,12 +34,12 @@ const index = () => {
                         <FaLongArrowAltRight/>
                     </div>
                 </div>
-            </div> */}
+            </div> 
              <div className='w-full bg-blue overflow-x-hidden'>
-             <div className='container mx-10 m-auto flex flex-wrap hover:cursor-pointer z-30 mt-5'>
+             <div className='container lg:mx-28 mx-5  flex lg:flex-row flex-col hover:cursor-pointer  z-30 mt-5'>
                 <ScrollToTop />
 
-                <div className='w-full lg:w-1/4 md:w-1/3 mb-14 mt-10'>
+                <div className='w-full lg:w-1/4  mb-14 mt-10 text-left justify-start'>
                     <div className='flex flex-row'>
                         <h2 className='text-yellow font-bold  text-[50px] mt-12 mx-5'><BsBook /></h2>
                         <h2 className='text-white font-bold text-[30px] mt-12'>Sikkha</h2>
@@ -58,10 +58,10 @@ const index = () => {
                         </ul>
                     </div>
                 </div>
-                <div className='w-full lg:w-1/4 md:w-1/3 mb-14  mt-10'>
-                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex ml-12'>Quick Links</h1>
+                <div className='w-full lg:w-1/4 mb-14  mt-10 text-left lg:ml-10 justify-start'>
+                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex lg:ml-12'>Quick Links</h1>
 
-                    <div className='flex mt-4 text-gray-300 justify-center'>
+                    <div className='flex mt-4 text-gray-300 lg:justify-center'>
                         <ul>
                             <li>Privacy Policy</li>
                             <li>Support</li>
@@ -80,27 +80,27 @@ const index = () => {
                         </ul>
                     </div>
                 </div>
-                <div className=' w-full lg:w-1/4 md:w-1/3 mb-14 mt-10'>
-                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex mx-5'>Recent Post</h1>
-                    <div className='flex flex-row justify-center mt-4'>
+                <div className=' w-full lg:w-1/4 mb-14 mt-10  lg:ml-10 text-left justify-start'>
+                    <h1 className='text-yellow font-bold  text-[25px] mt-12 flex lg:mx-5'>Recent Post</h1>
+                    <div className='flex flex-row lg:justify-center mt-4'>
                         <div>
-                            <img src={pic} alt='image' className='h-[50px] mx-3' />
+                            <img src={pic} alt='image' className='h-[50px] lg:mx-3 mx-0' />
                         </div>
                         <div>
-                            <h1 className='text-gray-300 mx-4'>Neque porro quisquam est qui dolorem ipsum</h1>
-                            <div className='flex mt-4 mx-3'>
+                            <h1 className='text-gray-300 lg:mx-4'>Neque porro quisquam est qui dolorem ipsum</h1>
+                            <div className='flex mt-4 lg:mx-3'>
                                 <h1 className='text-gray-300 text-[20px] gap-4 hover:text-yellow '><AiOutlineClockCircle /></h1>
                                 <h1 className='text-gray-300'>05 May,2018</h1>
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-row justify-center mt-4'>
+                    <div className='flex flex-row lg:justify-center mt-4'>
                         <div>
-                            <img src={pic} alt='image' className='h-[50px] mx-3' />
+                            <img src={pic} alt='image' className='h-[50px] lg:mx-3 mx-0' />
                         </div>
                         <div>
-                            <h1 className='text-gray-300 mx-4'>Neque porro quisquam est qui dolorem ipsum</h1>
-                            <div className='flex mt-4 mx-3'>
+                            <h1 className='text-gray-300 lg:mx-4'>Neque porro quisquam est qui dolorem ipsum</h1>
+                            <div className='flex mt-4 lg:mx-3'>
                                 <h1 className='text-gray-300 text-[20px] gap-4  hover:text-yellow'><AiOutlineClockCircle /></h1>
                                 <h1 className='text-gray-300'>05 May,2018</h1>
                             </div>
@@ -108,7 +108,7 @@ const index = () => {
                     </div>
 
                 </div>
-                <div className='w-full lg:w-1/4 md:w-1/3 mb-14 mt-10'>
+                <div className='w-full lg:w-1/4  mb-14 mt-10 lg:ml-16 text-left justify-start'>
                     <h1 className='text-yellow font-bold  text-[25px] mt-12 flex'>Contact us</h1>
                     <div className='flex mt-4'>
                         <ul>

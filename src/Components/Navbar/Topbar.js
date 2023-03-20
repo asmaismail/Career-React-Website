@@ -1,44 +1,48 @@
-import React from 'react'
-import {TfiHeadphoneAlt} from 'react-icons/tfi'
-import {HiOutlineMail} from 'react-icons/hi'
-import {FaFacebookF} from 'react-icons/fa'
-import {BsTwitter} from 'react-icons/bs'
-import {AiOutlineGlobal} from 'react-icons/ai'
-import {RiPinterestLine} from 'react-icons/ri'
-import {TfiGoogle} from 'react-icons/tfi'
+import React from "react";
+import {  BsHeadphones } from "react-icons/bs";
+// import {BsEnvelope} from 'react-icons/bs'
+import {
+  FaDribbble,
+  FaFacebookF,
+  FaGooglePlusG,
+  FaPinterestP,
+  FaTwitter,
+} from "react-icons/fa";
 
-const Topbar = () => {
+const TopBar = () => {
   return (
     <>
-       <div className='flex flex-row w-full h-[40px] bg-blue top-0'>
-//       <div className='flex flex-row w-[80%]'>
-//       <div className='flex text-[20px] text-yellow justify-center items-center w-40 hover:text-white'> <TfiHeadphoneAlt/> 
-//       <h1 className='flex text-[10px] text-white justify-center items-center'>+0123456789</h1>
-//       </div>
-//       <div className='border-r-2 mt-2 border-white h-6'></div>
-//       <div className='flex text-[20px] text-yellow justify-center items-center w-40 hover:text-white'><HiOutlineMail/>
-//       <h1 className='flex text-[10px] text-white justify-center items-center'>support@gmail.com</h1>
-//       </div>
-//       </div>
-//       <div className='flex flex-row w-[20%] cursor-pointer'>    
-//       <div className='flex text-[15px] text-yellow justify-center items-center  hover:text-white w-10'><FaFacebookF/>
-//       </div><div className='border-r-2 border-white h-6 gap-8 mt-2'></div>
-//       <div className='flex text-[15px] text-yellow justify-center items-center hover:text-white w-10'><BsTwitter/>
-//       </div><div className='border-r-2 border-white h-6 gap-8 mt-2'></div>
-//       <div className='flex text-[15px] text-yellow justify-center items-center hover:text-white w-10'><AiOutlineGlobal/>
-//       </div><div className='border-r-2 border-white h-6 gap-8 mt-2'></div>
-//       <div className='flex text-[15px] text-yellow justify-center items-center hover:text-white w-10'><TfiGoogle/>
-//       </div><div className='border-r-2 border-white h-6 gap-8 mt-2'></div>
-//       <div className='flex text-[15px] text-yellow justify-center items-center text-right hover:text-white w-10'><RiPinterestLine/>
-//       </div>
-      
-//       </div>
-
-
-//     </div>
-
+      <div className="w-full px-[10px] md:px-[40px] py-[7px] bg-[#002049] gap-3 flex flex-col md:flex-row justify-between items-center">
+        <div className="w-full md:w-1/2 flex flex-row items-center ">
+          <div className="flex flex-row  md:justify-start md:w-full gap-2  md:pr-0">
+            <BsHeadphones className="text-[#EABD32] justify-end" />
+            <span className="text-white text-[13px]">+123456789</span>
+          </div>
+          {/* <div className="flex flex-row  gap-1 justify-end md:w-full  md:pl-0">
+            <BsEnvelope className="text-[#EABD32]" />
+            <span className="text-white text-[13px]">support@gmail.com</span>
+          </div> */}
+        </div>
+        <div className="md:w-1/2 w-full flex flex-row md:justify-end gap-6 justify-center items-center">
+          <div className="pr-[15px] border-r-[1px]">
+            <FaFacebookF className="text-[#EABD32] " />
+          </div>
+          <div className="pr-[20px] border-r-[1px]">
+            <FaTwitter className="text-[#EABD32] " />
+          </div>
+          <div className="pr-[20px] border-r-[1px]">
+            <FaDribbble className="text-[#EABD32] " />
+          </div>
+          <div className="pr-[20px] border-r-[1px]">
+            <FaGooglePlusG className="text-[#EABD32] " />
+          </div>
+          <div>
+            <FaPinterestP className="text-[#EABD32] " />
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Topbar;
+export default TopBar;

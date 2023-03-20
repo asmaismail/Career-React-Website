@@ -4,7 +4,7 @@ import img1 from '../../Assets/event-1.jpg'
 import img2 from '../../Assets/event-3.jpg'
 import img3 from '../../Assets/event-2.jpg'
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
-
+import Navbar from '../Navbar/Navbar'
 
 const cards = [
   {
@@ -42,6 +42,7 @@ const cards = [
 const Event = () => {
     return(
         <>
+        <Navbar/>
          <Breadcrumb pageName ="Our Events"/>
         {/* <Breadcrumb pageName="Our Blog"/> */}
 

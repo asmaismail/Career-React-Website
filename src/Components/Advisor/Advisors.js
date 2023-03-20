@@ -15,10 +15,10 @@ const Advisors = () => {
       <div className='flex text-center justify-center'><p>Belis nisl adipiscing sapien sed malesu diame lacus eget erat Cras mollis scelerisqu Nullam arcu liquam here was consequat.</p></div>
     </div>
     <div class="flex flex-wrap justify-center mx-10 gap-x-10 mt-7 static z-40">
-  <div class="relative w-1/2 sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/5 my-2 mx-2 rounded-md">
+    <div class="relative w-1/2 sm:w-1/4 md:w-1/4 lg:w-1/4 xl:w-1/5 my-2 mx-2 rounded-md">
     <img class="w-full h-auto opacity-100 transition ease-in duration-500 transform hover:opacity-75 hover:scale-105" src={img} alt="Image 1"/>
     <div class="absolute inset-0 bg-gradient-to-br from-blue to-yellow opacity-0 hover:opacity-75 transition ease-in duration-500">
-      <h2 class="text-white text-2xl text-center m-auto pt-20 flex justify-center mt-10">Belis nisl adipiscing sapien malesu diame lacus eget erats
+     <h2 class="text-white text-2xl text-center m-auto pt-20 flex justify-center mt-10">Belis nisl adipiscing sapien malesu diame lacus eget erats
 </h2>
 <h2 class="text-white text-2xl text-center m-auto pt-20 flex justify-center"><FaFacebookF /><FaPinterestP/><AiOutlineTwitter/><FaLinkedinIn/></h2>
     </div>

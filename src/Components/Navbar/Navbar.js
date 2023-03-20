@@ -1,87 +1,58 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-
-import {
-  AppBar,
-  Tab,
-  Tabs,
-  Toolbar,
-  Typography,
-  useMediaQuery,
-  useTheme,
-  Menu,
-  MenuItem,
-} from "@mui/material";
-import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import DrawerComp from "./Drawer";
+import logo from "../../Assets/logo.png";
+import { BsCart3, BsSearch } from "react-icons/bs";
+import { FaBars } from "react-icons/fa";
 import Topbar from './Topbar'
+import SideBar from "./Sidebar";
 
 const Navbar = () => {
-  const [value, setValue] = useState();
-  const [anchorEl, setAnchorEl] = useState(null);
-  const theme = useTheme();
-  console.log(theme);
-  const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(isMatch);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+  const [toggle, setToggle] = useState(false);
+  const MenuItems = [
+    { name: "About", url: "/about" },
+    { name: "Courses", url: "/Courses" },
+    { name: "Events", url: "/event" },
+    { name: "Blogs", url: "/blog" },
+    { name: "FAQ's", url: "/faq" },
+    { name: "Shop", url: "/shop" },
+    { name: "Contact", url: "/contact"  },
+  ];
   return (
-    <React.Fragment>
-      <Topbar />
-      <AppBar sx={{ background: "#FFFFFF" }}>
-        <Toolbar>
-        <div style={{ display: "flex", alignItems: "center" }}>
-            <AutoStoriesOutlinedIcon sx={{ transform: "scale(2)", color: "#002147", marginTop: "4px" }} />
-            <Link to="/">
-              <Typography sx={{ fontSize: "2rem", paddingLeft: "20%", color: "#002147" }}>
-                 Sikkha
-               </Typography></Link>
-
-                     </div>
-
-          {isMatch ? (
-            <>
-              {/* <Typography sx={{ fontSize: "2rem", paddingLeft: "10%", color: "#002147" }}>
-                Sikkha
-              </Typography> */}
-              <DrawerComp />
-            </>
-          ) : (
-            <>
-              <Tabs
-                sx={{ marginLeft: "auto" }}
-                indicatorColor="#002147"
-                color="#002147"
-                fontSize="2rem"
-                value={value}
-                onChange={(e, value) => setValue(value)}
-              >
-                <Tab label="About us" sx={{marginLeft: "40px"}} component={Link} to="/about"/>
-                <Tab label="Our Course" component={Link} to="/Courses" />
-                <Tab label="Blog" component={Link} to="/blog"/>
-                <Tab label="Events" component={Link} to="/event"/>
-                <Tab label="Shop" component={Link} to="/shop"/>  
-                <Tab label="Conact us" component={Link} to="/contact" />
-                <Tab label="FAQ's"  component={Link} to="/faq"/>
-              </Tabs>
-              <SearchOutlinedIcon sx={{ marginLeft: "auto" , color: "#002147"}}/>
-              <ShoppingCartOutlinedIcon sx={{ marginLeft: "10px" , color: "#002147"}}/>
-            </>
-          )}
-        </Toolbar>
-      </AppBar>
-    </React.Fragment>
+    <>
+    <Topbar/>
+      <SideBar toggle={toggle} setToggle={setToggle} />
+      <div className="w-full h-[80px] shadow-lg flex bg-white z-50 flex-row justify-between items-center md:px-[40px] sticky top-0">
+        <div className="w-full md:w-[30%]">
+          <a href="/"><img src={logo} alt="logo" className="cursor-pointer" /></a>
+        </div>
+        <div className="w-[55%] md:block hidden border-r-[1px] pr-[10px]">
+          <ul className="flex flex-row justify-between uppercase font-semibold">
+            {MenuItems.map((val, index) => {
+              return (
+                <>
+                  <li key={index}>{val.name}</li>
+                </>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="md:w-[15%] w-full flex flex-row justify-end pr-[30px] md:pr-0 md:justify-start md:px-[50px] gap-6 items-center">
+          <BsSearch className="text-[20px]" />
+          <div className="relative">
+            <BsCart3 className="text-[20px]" />
+            <div className="absolute top-[-10px] right-[-10px] flex justify-center items-center p-[2px] bg-[#FFC30B] rounded-full w-[17px] h-[17px]">
+              1
+            </div>
+          </div>
+        </div>
+        <div
+          className="md:hidden block pr-[15px]"
+          onClick={() => setToggle(true)}
+        >
+          <FaBars className="text-[20px]" />
+        </div>
+      </div>
+    </>
   );
 };
 
 export default Navbar;
-

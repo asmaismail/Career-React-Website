@@ -28,7 +28,7 @@ function ScrollToTop() {
 
   return (
     <button
-      className={`fixed bottom-4 right-auto bg-yellow text-black p-2 rounded-full shadow-md hover:bg-blue hover:text-white focus:outline-none ${
+      className={`fixed bottom-4 -ml-24 bg-yellow text-black p-2 rounded-full shadow-md hover:bg-blue hover:text-white focus:outline-none ${
         isVisible ? 'visible' : 'invisible'
       }`}
       onClick={scrollToTop}

@@ -122,8 +122,8 @@ const Courses = () => {
 
     </div>
 
-    {/* <Brand/>   */}
-     {/* <Footer/> */}
+    <Brand/>  
+     <Footer/>
     </>
   )
 }

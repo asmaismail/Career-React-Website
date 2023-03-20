@@ -12,7 +12,7 @@ const Contact = () => {
     <>
     <div className='overflow-x-hidden'>
       <Navbar />
-      <Breadcrumb pageName="Contact us"/>
+      <Breadcrumb pageName="Contact us"/>\
       <div>
       <h2 className='text-blue font-bold mt-7 text-[30px] text-center'>
         Feel Free to Contact us</h2>
@@ -53,7 +53,7 @@ const Contact = () => {
               <input type='text' className='border border-solid border-black p-4 lg:w-1/2 md:w-1/2 w-full' autoComplete='off' placeholder='Experience' name='experience' required/>
             </div>
             <div className='mt-5'>
-            <textarea name='message' className='border border-solid border-black lg:px-64 px-32' cols='18' rows='6' placeholder='Your message' autoComplete='off' required></textarea>
+            <textarea name='message' className='border border-solid border-black w-full' cols='' rows='6' placeholder='Your message' autoComplete='off' required></textarea>
             </div>
           </div>
           <button className='bg-blue text-white px-6 py-4 hover:bg-yellow hover:text-black mt-5'>Submit now</button>
@@ -61,6 +61,7 @@ const Contact = () => {
 
         </div>
        </div>
+
         {/* map section */}
         <div className='mt-7'>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13619.378335212325!2d73.05147073955077!3d31.4184078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392243450c1147b7%3A0x7a1253803d90ccb9!2sCareer%20Institute%20-%20Jinnah%20Colony%20Campus!5e0!3m2!1sen!2s!4v1676615777197!5m2!1sen!2s" 
