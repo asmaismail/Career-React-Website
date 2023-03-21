@@ -4,6 +4,7 @@ import { BsCart3, BsSearch } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 import Topbar from './Topbar'
 import SideBar from "./Sidebar";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -20,17 +21,17 @@ const Navbar = () => {
     <>
     <Topbar/>
       <SideBar toggle={toggle} setToggle={setToggle} />
-      <div className="w-full h-[80px] shadow-lg flex bg-white z-50 flex-row justify-between items-center md:px-[40px] sticky top-0">
+      <div className="w-full h-[80px] shadow-lg flex bg-white z-50 flex-row justify-between items-center md:px-[40px] sticky top-0 cursor-pointer">
         <div className="w-full md:w-[30%]">
-          <a href="/"><img src={logo} alt="logo" className="cursor-pointer" /></a>
+          <Link to="/"><img src={logo} alt="logo" className="cursor-pointer" /></Link>
         </div>
         <div className="w-[55%] md:block hidden border-r-[1px] pr-[10px]">
           <ul className="flex flex-row justify-between uppercase font-semibold">
             {MenuItems.map((val, index) => {
               return (
-                <>
-                  <li key={index}>{val.name}</li>
-                </>
+                <li key={index}>
+                  <Link to={val.url}>{val.name}</Link>
+                </li>
               );
             })}
           </ul>

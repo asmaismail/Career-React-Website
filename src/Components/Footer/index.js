@@ -24,7 +24,7 @@ const index = () => {
                     <h2 className='text-blue flex font-bold ml-10 mt-2 text-[30px]'>Subscribe</h2><br />
                     <h2 className='text-blue flex ml-10 text-[20px]'>Enter your email and get latest updates and offers subscribe us</h2>
                 </div>
-                <div className="relative mt-7">
+                <div className="relative lg:mt-7 -mt-44 lg:mx-0 mx-24">
                     <input
                         type="text"
                         className="border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-lg text-sm focus:outline-none"

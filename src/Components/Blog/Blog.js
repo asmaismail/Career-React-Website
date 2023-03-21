@@ -123,12 +123,13 @@ const Blog = () => {
         
       ))}
     </div>
+   <Brand/>   
+
     <Footer/>
     </div>
 
     
 
-    {/* <Brand/>   */}
     </>
   )
 }

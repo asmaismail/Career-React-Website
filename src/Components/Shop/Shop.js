@@ -9,6 +9,7 @@ import img6 from '../../Assets/shop-6.jpg'
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/index'
+import Brand from '../Brand/Brand'
 const cardsData = [
     {
       id: 1,
@@ -105,6 +106,7 @@ const Shop = () => {
         </div>
       ))}
     </div>
+    <Brand/>
     <Footer/>
     </>
   )

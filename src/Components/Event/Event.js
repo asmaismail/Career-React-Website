@@ -5,7 +5,8 @@ import img2 from '../../Assets/event-3.jpg'
 import img3 from '../../Assets/event-2.jpg'
 import Breadcrumb from '../Breadcrumb/Breadcrumb'
 import Navbar from '../Navbar/Navbar'
-
+import Brand from '../Brand/Brand'
+import Footer from '../Footer/index'
 const cards = [
   {
     image: img1,
@@ -83,6 +84,8 @@ const Event = () => {
   
 ))}
 </div>
+<Brand/>
+<Footer/>
 </>
     );
 };
