@@ -11,6 +11,8 @@ import CounterUp from '../CounterUp/CounterUp'
 import Breadcrumb  from '../Breadcrumb/Breadcrumb'
 import CardCarousel from '../../Reuseables/CardCarousel'
 import LinearProgress from '@mui/material/LinearProgress';
+
+
 const About = () => {
   return (
     <>
