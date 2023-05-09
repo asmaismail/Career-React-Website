@@ -1,21 +1,17 @@
-import React from 'react'
-import { BsBook } from 'react-icons/bs'
-import { FaFacebookF } from 'react-icons/fa'
-import { TfiHeadphoneAlt } from 'react-icons/tfi'
-import { HiOutlineMail } from 'react-icons/hi'
-import { HiOutlineLocationMarker } from 'react-icons/hi'
-import { BsTwitter } from 'react-icons/bs'
-import { AiOutlineGlobal } from 'react-icons/ai'
-import { RiPinterestLine } from 'react-icons/ri'
-import { TfiGoogle } from 'react-icons/tfi'
-import pic from '../../Assets/main_image.avif'
-import { AiOutlineClockCircle } from 'react-icons/ai'
+import React from 'react';
+import { BsBook } from 'react-icons/bs';
+import { FaFacebookF } from 'react-icons/fa';
+import { TfiHeadphoneAlt } from 'react-icons/tfi';
+import { HiOutlineMail } from 'react-icons/hi';
+import { HiOutlineLocationMarker } from 'react-icons/hi';
+import { BsTwitter } from 'react-icons/bs';
+import { AiOutlineGlobal } from 'react-icons/ai';
+import { RiPinterestLine } from 'react-icons/ri';
+import { TfiGoogle } from 'react-icons/tfi';
+import pic from '../../Assets/main_image.avif';
+import { AiOutlineClockCircle } from 'react-icons/ai';
 import ScrollToTop from './ScrollToTop/ScrollToTop';
-import { FaLongArrowAltRight } from 'react-icons/fa'
-
-// import ScrollToTop from "react-scroll-to-top";
-// import {BsFillArrowUpCircleFill} from 'react-icons/bs'
-
+import { FaLongArrowAltRight } from 'react-icons/fa';
 const index = () => {
     return (
         <>
@@ -24,7 +20,7 @@ const index = () => {
                     <h2 className='text-blue flex font-bold ml-10 mt-2 text-[30px]'>Subscribe</h2><br />
                     <h2 className='text-blue flex ml-10 text-[20px]'>Enter your email and get latest updates and offers subscribe us</h2>
                 </div>
-                <div className="relative lg:mt-7 -mt-44 lg:mx-0 mx-24">
+                <div className="relative lg:mt-7 -mt-44 mr-10 mx-24">
                     <input
                         type="text"
                         className="border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-lg text-sm focus:outline-none"
@@ -41,7 +37,7 @@ const index = () => {
 
                 <div className='w-full lg:w-1/4  mb-14 mt-10 text-left justify-start'>
                     <div className='flex flex-row'>
-                        <h2 className='text-yellow font-bold  text-[50px] mt-12 mx-5'><BsBook /></h2>
+                        <h2 className='text-yellow font-bold  text-[50px] mt-12 ml-5'><BsBook /></h2>
                         <h2 className='text-white font-bold text-[30px] mt-12'>Sikkha</h2>
                     </div>
                     <div className='mx-5 mt-2 text-gray-300'>

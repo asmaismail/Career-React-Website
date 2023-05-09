@@ -10,14 +10,14 @@ import img5 from '../../Assets/brand6.png'
 const Brand = () => {
   return (
     <>
-      <div className='lg:w- flex justify-center lg:h-[200px] h'>
-        <div className='flex lg:flex-row flex-col  mt-16 mb-16 lg:gap-x-20'>
-          <div className='flex flex-row'>
+      <div className='flex flex-row justify-center lg:h-[200px] h'>
+        <div className='flex lg:flex-row flex-col mt-16 mb-16 lg:gap-x-10'>
+          <div className='flex flex-row lg:gap-x-10'>
            <img src={img} alt="brand pic" /> 
             <img src={img1} alt="brand pic" /> 
             <img src={img2} alt="brand pic" /> 
           </div>
-          <div className='flex flex-row lg:mt-0 mt-10'>
+          <div className='flex flex-row lg:mt-0 mt-10 lg:gap-x-10'>
             <img src={img3} alt="brand pic" /> 
             <img src={img4} alt="brand pic" /> 
             <img src={img5} alt="brand pic" /> 
