@@ -32,8 +32,8 @@ const index = () => {
                 </div>
             </div> 
              <div className='w-full bg-blue overflow-x-hidden'>
-             <div className='container lg:mx-28 mx-5  flex lg:flex-row flex-col hover:cursor-pointer  z-30 mt-5'>
-                <ScrollToTop />
+             <div className='container mx-5  flex lg:flex-row flex-col hover:cursor-pointer  z-30 mt-5'>
+                {/* <ScrollToTop /> */}
 
                 <div className='w-full lg:w-1/4  mb-14 mt-10 text-left justify-start'>
                     <div className='flex flex-row'>
@@ -115,7 +115,7 @@ const index = () => {
                         <ul>
                             <li className='mx-4 text-gray-300'>+003 (1234) 7894</li>
                             <li className='mx-4 text-gray-300'> youremail@gmail.com</li>
-                            <li className='mx-4 text-gray-300'> 123 New Street, 6th Floor, New York</li>
+                            <li className='mx-4 text-gray-300'> 123 New Street, 6th Floor,<br/> New York</li>
                         </ul>
                     </div>
                     <h3 className='text-gray-300 text-[20px] mt-4 font-bold'>Opening Hours</h3>

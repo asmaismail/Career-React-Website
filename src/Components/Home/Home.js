@@ -6,33 +6,11 @@ import CardCarousel from '../../Reuseables/CardCarousel'
 import Carousel from '../../Reuseables/Carousel'
 import Shop from '../../Reuseables/Shop'
 import img1 from '../../Assets/home-1.png'
-// import img2 from '../../Assets/home-2.png'
 import Advisors from '../Advisor/Advisors'
-// import image1 from '../../Assets/course-1.jpg'
-// import image2 from '../../Assets/course-2.jpg'
 import form from '../../Assets/home123.png'
 import CounterUp from '../CounterUp/CounterUp'
 import img from '../../Assets/about-right.png'
-import {AiFillStar} from 'react-icons/ai'
-
-// const data = [
-//   {
-//     image: image1,
-//     title: "Business Studies",
-//     button: "Business",
-//     description: "Description 1",
-//     icon1: "icon1",
-//     icon2: "icon2",
-//   },
-//   {
-//     image: image2,
-//     button: "Science",
-//     title: "Computer Engineering",
-//     description: "Description 2",
-//     icon1: "icon1",
-//     icon2: "icon2",
-//   },
-// ]
+import {AiFillStar} from 'react-icons/ai';
 
 const Home = () => {
   return (

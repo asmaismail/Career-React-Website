@@ -21,7 +21,8 @@ const Navbar = () => {
     <>
     <Topbar/>
       <SideBar toggle={toggle} setToggle={setToggle} />
-      <div className="w-full h-[80px] shadow-lg flex bg-white z-50 flex-row justify-between items-center md:px-[40px] sticky top-0 cursor-pointer">
+      <div className="w-full h-[80px] shadow-lg flex bg-white z-50 flex-row justify-between items-center
+       md:px-[40px] sticky top-0 cursor-pointer">
         <div className="w-full md:w-[30%]">
           <Link to="/"><img src={logo} alt="logo" className="cursor-pointer" /></Link>
         </div>
